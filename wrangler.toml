@@ -1,0 +1,7 @@
+name = "kairo-universal-deobf"
+main = "src/index.js"
+compatibility_date = "2024-01-01"
+
+# Bind folder public sebagai assets
+[site]
+bucket = "./public"
