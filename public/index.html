@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAIRO | Universal Deobfuscator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.36.1/min/vs/loader.min.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <header class="cyber-header">
+            <h1 class="glitch" data-text="KAIRO_DEOBF">KAIRO_DEOBF</h1>
+            <p class="subtitle">// UNIVERSAL LUA/LUAU DEOBFUSCATOR //</p>
+        </header>
+
+        <main class="workspace">
+            <div class="editor-panel">
+                <div class="panel-header">
+                    <span class="status-dot"></span> INPUT_SOURCE
+                </div>
+                <div id="editor-input" class="editor-box"></div>
+            </div>
+
+            <div class="controls">
+                <button id="btn-deobf" class="cyber-btn">
+                    <span class="btn-text">[ EXECUTE_DEOBF ]</span>
+                    <span class="btn-glitch"></span>
+                </button>
+                <div class="options">
+                    <label><input type="checkbox" id="opt-strings" checked> String Decrypt</label>
+                    <label><input type="checkbox" id="opt-cff" checked> CFF Reconstruct</label>
+                    <label><input type="checkbox" id="opt-junk" checked> Junk Removal</label>
+                    <label><input type="checkbox" id="opt-beautify" checked> Beautify</label>
+                </div>
+            </div>
+
+            <div class="editor-panel">
+                <div class="panel-header">
+                    <span class="status-dot active"></span> OUTPUT_CLEAN
+                </div>
+                <div id="editor-output" class="editor-box"></div>
+            </div>
+        </main>
+
+        <footer class="console-log">
+            <div class="log-header">> SYSTEM_LOG</div>
+            <div id="log-output" class="log-content">Waiting for input...</div>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
